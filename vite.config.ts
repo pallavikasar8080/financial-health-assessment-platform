@@ -1,9 +1,7 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import path from 'path';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/financial-health-assessment-platform/', // ✅ must match repo name
+  base: '/financial-health-assessment-platform/',
   plugins: [react()],
-  resolve: { alias: { '@': path.resolve(__dirname, '.') } },
-});
+})
